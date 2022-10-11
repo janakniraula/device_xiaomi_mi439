@@ -29,3 +29,8 @@ bluetooth.profile.sap.server.enabled?=true
 
 # Enable FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
+
+# enable debugging
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.debuggable=1
