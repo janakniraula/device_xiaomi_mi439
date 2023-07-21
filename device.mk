@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2017-2022 The LineageOS Project
-# Copyright (C) 2023 Paranoid Android
+# Copyright (C) 2024 Paranoid Android
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -13,7 +13,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # 8937/sdm439 Platform
 TARGET_BOARD_PLATFORM := msm8937
-TARGET_KERNEL_VERSION := 4.9
+TARGET_KERNEL_VERSION := 4.19
 
 # ANT
 PRODUCT_PACKAGES += \
@@ -93,6 +93,10 @@ endif
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     system/core/libprocessgroup/profiles/task_profiles_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
 
 # Consumer IR
 PRODUCT_PACKAGES += \
@@ -200,6 +204,7 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
+    init.qti.dcvs.sh \
     init.qti.qseecomd.sh \
     init.xiaomi.device.sh
 
