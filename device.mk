@@ -277,7 +277,6 @@ PRODUCT_PACKAGES += \
     Mi439Settings \
     Mi439CarrierConfig \
     Mi439STelephony \
-    Mi439TetheringConfig \
     Mi439Wifi \
     Mi439Haptic \
     XiaomiOlive \
