@@ -7,6 +7,10 @@
 # Cryptfshw
 TARGET_EXCLUDE_CRYPTFSHW := true
 
+#EverestOS overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-everest \
+
 # Gatekeeper
 TARGET_USES_DEVICE_SPECIFIC_GATEKEEPER := true
 
