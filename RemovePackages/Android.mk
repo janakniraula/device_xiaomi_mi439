@@ -47,6 +47,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     SprintHM \
     Tycho \
     USCCDM \
+    ViaBrowser \
     Videos \
     VZWAPNLib \
     VzwOmaTrigger \
