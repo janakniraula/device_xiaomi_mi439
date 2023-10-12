@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_mi439.mk
+    $(LOCAL_DIR)/pixys_mi439.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_mi439-user \
-    aosp_mi439-userdebug \
-    aosp_mi439-eng
+    pixys_mi439-user \
+    pixys_mi439-userdebug \
+    pixys_mi439-eng
