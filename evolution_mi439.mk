@@ -19,10 +19,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mi439 device configuration.
 $(call inherit-product, device/xiaomi/mi439/device.mk)
 
-# Inherit from common AOSP configuration
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit from common evolution configuration
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_mi439
+PRODUCT_NAME := evolution_mi439
 PRODUCT_DEVICE := mi439
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI SDM439
@@ -30,6 +30,16 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 720
+
+# Evolution X Build Type & Maintainer stuff.
+EVO_BUILD_TYPE := UNOFFICIAL
+
+# Gapps Build Details.
+TARGET_USES_MINNI_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+
+# Custom stuff.
+TARGET_SUPPORTS_QUICK_TAP := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
