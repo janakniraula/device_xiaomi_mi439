@@ -362,10 +362,6 @@ PRODUCT_PACKAGES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 28
 
-# Shims
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v32.so
-
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat
 
