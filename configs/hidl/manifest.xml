@@ -250,11 +250,6 @@
         <fqname>@3.0::IRTPService/imsrtpservice</fqname>
     </hal>
     <hal format="hidl">
-    <name>vendor.qti.qspmhal</name>
-    <transport>hwbinder</transport>
-    <fqname>@1.0::IQspmhal/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.lineage.livedisplay</name>
         <transport>hwbinder</transport>
         <fqname>@2.0::IPictureAdjustment/default</fqname>
