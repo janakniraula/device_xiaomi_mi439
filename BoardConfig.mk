@@ -118,8 +118,9 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ARCH := arm64
-KERNEL_DEFCONFIG := vendor/msm8937-perf_defconfig
-KERNEL_FRAGMENT_CONFIG := vendor/xiaomi-sdm439.config
+TARGET_KERNEL_CONFIG := \
+    vendor/msm8937-perf_defconfig \
+    vendor/xiaomi-sdm439.config
 KERNEL_LLVM_SUPPORT := true
 KERNEL_CUSTOM_LLVM := true
 KERNEL_SD_LLVM_SUPPORT := false
