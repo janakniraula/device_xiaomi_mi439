@@ -92,6 +92,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi439/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/hvdcp_opti
 
+# Remove packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.qcom_ramdisk \
